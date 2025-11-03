@@ -1,0 +1,31 @@
+.calendar-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.calendar-page-header {
+  margin-bottom: 32px;
+}
+
+.calendar-page-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+}
+
+.calendar-page-header p {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .calendar-page {
+    padding: 0 16px;
+  }
+  
+  .calendar-page-header h1 {
+    font-size: 28px;
+  }
+}

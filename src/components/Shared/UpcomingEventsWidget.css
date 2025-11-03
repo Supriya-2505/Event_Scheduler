@@ -1,0 +1,159 @@
+.upcoming-events-widget {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.widget-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.view-all-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.view-all-link:hover {
+  color: #1d4ed8;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.event-item:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+}
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 50px;
+  padding: 8px;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+}
+
+.date-day {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1;
+}
+
+.date-month {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.event-details {
+  flex: 1;
+}
+
+.event-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 4px 0;
+}
+
+.event-time {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 0 2px 0;
+}
+
+.event-location {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.event-status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.event-status.confirmed {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.event-status.pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.event-status.cancelled {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.no-events {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6b7280;
+}
+
+.no-events p {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .upcoming-events-widget {
+    padding: 20px;
+  }
+  
+  .event-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .event-date {
+    flex-direction: row;
+    gap: 8px;
+    min-width: auto;
+  }
+  
+  .event-status {
+    align-self: flex-end;
+  }
+}
