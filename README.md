@@ -162,7 +162,7 @@ src/
 
 This project is licensed under the MIT License.
 
-##Authors
+## Authors
 
 SUPRIYA K
 HARISH J
